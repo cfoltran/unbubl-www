@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -33,63 +33,126 @@ header .logo {
 }
 
 header h1 {
-  font-size: 3rem; /* Increased font size */
+  font-size: 3rem;
   font-weight: 600;
   margin: 0;
   text-align: center;
 }
 
-/* Main content */
-main h2 {
-  font-size: 2.5rem; /* Increased font size */
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-  text-align: left; /* Aligning to left */
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #000 0%, #111 100%);
 }
 
-main ul {
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.text-content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-content ul {
   list-style: none;
   padding: 0;
   margin: 0 0 2rem;
 }
 
-main ul li {
-  font-size: 1.3rem; /* Increased font size */
-  padding: 0.5rem 0;
-  text-align: left; /* Aligning to left */
+.text-content ul li {
+  font-size: 1.4rem;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Paragraph */
-main p {
-  font-size: 1.2rem; /* Increased font size */
-  text-align: left; /* Aligning to left */
+.text-content p {
+  font-size: 1.3rem;
   opacity: 0.8;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
-/* CTA button */
-.cta-button {
-  display: block;
-  text-align: center;
-  background-color: white;
-  color: black;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  text-decoration: none;
-  width: fit-content;
-  margin: 0 auto;
-  transition: background 0.2s ease;
+/* iPhone Container */
+.iphone-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
 }
 
-.cta-button:hover {
-  background-color: #ddd;
+.iphone-frame {
+  width: 300px;
+  height: 650px;
+  position: relative;
+  transform: rotateY(-15deg);
+  transition: transform 0.3s ease;
+  background: #1a1a1a;
+  border-radius: 45px;
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 0 2px rgba(255, 255, 255, 0.03),
+    0 0 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.iphone-frame:hover {
+  transform: rotateY(-5deg);
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 0 0 2px rgba(255, 255, 255, 0.05),
+    0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.iphone-frame video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94%;
+  height: 94%;
+  border-radius: 38px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* App Store Link */
+.app-store-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.app-store-link:hover {
+  transform: translateY(-2px);
+}
+
+.app-store-badge {
+  height: 50px;
+  width: auto;
+}
+
+/* Footer */
 footer {
-  padding: 20px 0;
+  padding: 2rem 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 footer p {
@@ -99,8 +162,53 @@ footer p {
 footer a {
   color: #00bcd4;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #00e5ff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .text-content ul li {
+    justify-content: center;
+  }
+
+  .iphone-frame {
+    width: 250px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-content ul li {
+    font-size: 1.2rem;
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+  }
 }
