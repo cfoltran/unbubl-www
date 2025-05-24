@@ -8,19 +8,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Unbubl</h3>
             <p className="text-sm text-white/70">
-              Découvrez des histoires cachées autour de vous.
+              Discover hidden stories around you.
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Liens</h3>
+            <h3 className="text-lg font-semibold mb-4">Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link 
                   href="https://apps.apple.com/fr/app/unbubl/id6744279413?l=en-GB"
                   className="text-sm text-white/70 hover:text-[#00bcd4] transition-colors"
                 >
-                  Télécharger l&apos;application
+                  Download the app
                 </Link>
               </li>
               <li>
@@ -28,7 +28,15 @@ export default function Footer() {
                   href="/privacy-policy"
                   className="text-sm text-white/70 hover:text-[#00bcd4] transition-colors"
                 >
-                  Politique de confidentialité
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/delete-account"
+                  className="text-sm text-white/70 hover:text-[#00bcd4] transition-colors"
+                >
+                  Delete Account
                 </Link>
               </li>
             </ul>
@@ -37,16 +45,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <a 
-              href="mailto:hello@unbubl.com"
+              href="mailto:clement@deckart.xyz"
               className="text-sm text-white/70 hover:text-[#00bcd4] transition-colors"
             >
-              hello@unbubl.com
+              clement@deckart.xyz
             </a>
           </div>
         </div>
         
         <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/50">
-          <p>© {new Date().getFullYear()} Unbubl. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Unbubl. All rights reserved.</p>
         </div>
       </div>
     </footer>

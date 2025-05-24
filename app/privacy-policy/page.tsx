@@ -3,7 +3,7 @@ export default function PrivacyPolicy() {
     <div className="min-h-screen bg-gradient-to-b from-black to-[#111] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 space-y-8">
         <h1 className="text-4xl font-bold mb-4">Privacy Policy for Unbubl</h1>
-        <p className="text-gray-400"><strong>Last Updated: [Date]</strong></p>
+        <p className="text-gray-400"><strong>Last Updated: 24/05/2025</strong></p>
 
         <p className="text-lg leading-relaxed">
           At

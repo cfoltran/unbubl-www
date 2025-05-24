@@ -15,7 +15,7 @@ export default function Navbar() {
               href="https://apps.apple.com/fr/app/unbubl/id6744279413?l=en-GB" 
               className="text-sm hover:text-[#00bcd4] transition-colors"
             >
-              Télécharger
+              Download
             </Link>
           </div>
         </div>
