@@ -20,7 +20,7 @@ export default function Footer() {
                   href="https://apps.apple.com/fr/app/unbubl/id6744279413?l=en-GB"
                   className="text-sm text-white/70 hover:text-[#00bcd4] transition-colors"
                 >
-                  Télécharger l'application
+                  Télécharger l&apos;application
                 </Link>
               </li>
               <li>

@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
             <li>
               <strong className="text-white">Opt-Out</strong>
               : You can opt-out of data collection for analytics and push
-              notifications at any time via the app's settings.
+              notifications at any time via the app&apos;s settings.
             </li>
           </ul>
         </section>
@@ -136,7 +136,7 @@ export default function PrivacyPolicy() {
         </section>
 
         <section className="space-y-6">
-          <h2 className="text-2xl font-semibold text-white">8. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold text-white">8. Children&apos;s Privacy</h2>
           <p className="text-lg leading-relaxed">
             Our app is not intended for children under the age of 13. We do not
             knowingly collect data from children. If we become aware that we have
@@ -161,7 +161,7 @@ export default function PrivacyPolicy() {
           <p className="text-lg leading-relaxed">
             We may update this Privacy Policy from time to time to reflect changes
             in our practices or for other operational, legal, or regulatory reasons.
-            Any changes will be reflected in the updated "Last Updated" date at the
+            Any changes will be reflected in the updated &quot;Last Updated&quot; date at the
             top of this page.
           </p>
         </section>
